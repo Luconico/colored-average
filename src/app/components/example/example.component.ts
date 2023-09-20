@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ColoredAverageOptions } from '../../directives/colored-average.directive';
+import { ColoredAverageOptions } from '../../directives/colored-average/colored-average.directive';
 
 @Component({
   selector: 'app-example',
