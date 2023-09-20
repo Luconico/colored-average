@@ -107,5 +107,5 @@ export class ColoredAverageDirective implements AfterViewInit {
 export interface ColoredAverageOptions {
   minColor: string;
   maxColor: string;
-  applyToBackground: boolean;
+  applyToBackground?: boolean;
 }
