@@ -1,0 +1,24 @@
+
+
+<div class='container mt-3'>
+    <h2>Simple table</h2>
+
+    <table class='table'>
+        <thead>
+            <tr>
+                <th>column1</th>
+                <th>column2</th>
+                <th>column3</th>
+                <th>column4</th>
+            </tr>
+        </thead>
+        <tbody [colored-average]="{ minColor: 'red', maxColor: 'green', applyToBackground: true }">
+            <tr *ngFor="let row of rows">
+                <td>{{ row.column1 }}</td>
+                <td>{{ row.column2 }}</td>
+                <td>{{ row.column3 }}</td>
+                <td>{{ row.column4 }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
