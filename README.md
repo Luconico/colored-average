@@ -40,11 +40,11 @@ To use the `colored-average` directive, follow these steps:
 
 2. Add the [colored-average] directive to your table's tbody element in your component's template:
 
-    ```typescript
+    ```html
     <table>
-    <tbody [colored-average]="coloredAverageOptions">
-        <!-- Your table rows here -->
-    </tbody>
+        <tbody [colored-average]="coloredAverageOptions">
+            <!-- Your table rows here -->
+        </tbody>
     </table>
     ```
 Now, the colored-average directive will apply color gradients to the table cells based on the numeric values within the columns.
