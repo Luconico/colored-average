@@ -1,6 +1,11 @@
 {
   "name": "colored-average",
-  "version": "0.8.0",
+  "version": "0.8.1",
+  "description": "Angular directive that allows you to dynamically colorize table cells based on the range of numeric values within the columns.",
+  "author": {
+    "name": "LucasGS",
+    "email": "dev@lucas.gs"},
+  "license": "MIT",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -8,7 +13,6 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
-  "private": true,
   "dependencies": {
 
   },
