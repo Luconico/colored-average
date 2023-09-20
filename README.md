@@ -13,6 +13,40 @@ You can install the `colored-average` directive via npm using the following comm
 
 ```shell
 npm install colored-average
+```
+## Usage
+
+To use the `colored-average` directive, follow these steps:
+
+1. Import the `ColoredAverageDirective` in your Angular component:
+
+   ```typescript
+   import { Component } from '@angular/core';
+   import { ColoredAverageOptions } from 'colored-average';
+
+   @Component({
+     selector: 'app-your-component',
+     templateUrl: './your-component.component.html',
+   })
+   export class YourComponent {
+     coloredAverageOptions: ColoredAverageOptions = {
+       minColor: '#FF0000', // Minimum color (e.g., red)
+       maxColor: '#00FF00', // Maximum color (e.g., green)
+       applyToBackground: true, // Apply to cell background color
+     };
+   }
+   ```
+
+2. Add the [colored-average] directive to your table's tbody element in your component's template:
+
+    ```typescript
+    <table>
+    <tbody [colored-average]="coloredAverageOptions">
+        <!-- Your table rows here -->
+    </tbody>
+    </table>
+    ```
+
 
 ## Options
 
