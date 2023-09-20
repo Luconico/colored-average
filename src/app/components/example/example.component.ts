@@ -10,9 +10,16 @@ import { ColoredAverageOptions } from '../../directives/colored-average/colored-
 export class ExampleComponent {
 
   coloredAverageOptions: ColoredAverageOptions = { 
-    minColor: '#FF0000',
-    maxColor: '#00FF00',
-    applyToBackground: true
+    minColor: '#e1affd',
+    maxColor: '#9300ff',
+    applyToBackground: true,
+    columnOptions: [
+      {
+        minValue: 0,
+        maxValue: 1000,
+        index: 2
+      }
+    ]
   }
 
   rows = [

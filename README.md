@@ -37,7 +37,7 @@ To use the `colored-average` directive, follow these steps:
    export class AppModule {}
    ```
 
-2. Import the `ColoredAverageDirective` in your Angular component:
+2. Import the `ColoredAverageOptions` in your Angular component:
 
    ```typescript
    import { Component } from '@angular/core';
@@ -52,6 +52,14 @@ To use the `colored-average` directive, follow these steps:
        minColor: '#FF0000', // Minimum color (e.g., red)
        maxColor: '#00FF00', // Maximum color (e.g., green)
        applyToBackground: true, // Apply to cell background color
+       columnOptions: [
+         {
+           index: 3, // Index of the column (0-based)
+           minValue: 0, // Minimum value for this column
+           maxValue: 100, // Maximum value for this column
+         },
+         // Add more columnOptions as needed
+        ],
      };
    }
    ```
@@ -74,6 +82,10 @@ The `ColoredAverageOptions` interface allows you to customize the behavior of th
 - `minColor`: The color applied to the minimum value in the column. Specify the color using a hexadecimal value (e.g., `#FF0000` for red).
 - `maxColor`: The color applied to the maximum value in the column. Specify the color using a hexadecimal value (e.g., `#00FF00` for green).
 - `applyToBackground`: Set this option to `true` to apply colors to the background of the table cells. Set it to `false` to apply colors to the text color.
+- `columnOptions`: An array of `ColumnOptions` objects that specify the minimum and maximum values for each column in the table. This is useful for cases like pagination where you want to set specific bounds for a column without affecting others. The `ColumnOptions` interface has the following properties:
+  - `index`: The index of the column (0-based).
+  - `minValue`: The minimum value for this column.
+  - `maxValue`: The maximum value for this column.
 
 You can adjust these options to achieve the desired visual effect for your table columns. For example, you can create a gradient effect from red to green for numeric values in a table.
 
