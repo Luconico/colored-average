@@ -19,7 +19,25 @@ npm install colored-average
 
 To use the `colored-average` directive, follow these steps:
 
-1. Import the `ColoredAverageDirective` in your Angular component:
+1. Import the `ColoredAverageModule` in your Angular module:
+
+   ```typescript
+   import { NgModule } from '@angular/core';
+   import { BrowserModule } from '@angular/platform-browser';
+   import { ColoredAverageModule } from 'colored-average';
+
+   import { AppComponent } from './app.component';
+
+   @NgModule({
+     declarations: [AppComponent],
+     imports: [BrowserModule, ColoredAverageModule],
+     providers: [],
+     bootstrap: [AppComponent],
+   })
+   export class AppModule {}
+   ```
+
+2. Import the `ColoredAverageDirective` in your Angular component:
 
    ```typescript
    import { Component } from '@angular/core';
@@ -38,7 +56,7 @@ To use the `colored-average` directive, follow these steps:
    }
    ```
 
-2. Add the [colored-average] directive to your table's tbody element in your component's template:
+3. Add the [colored-average] directive to your table's tbody element in your component's template:
 
     ```html
     <table>
