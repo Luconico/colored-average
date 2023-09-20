@@ -46,7 +46,7 @@ To use the `colored-average` directive, follow these steps:
     </tbody>
     </table>
     ```
-
+Now, the colored-average directive will apply color gradients to the table cells based on the numeric values within the columns.
 
 ## Options
 
