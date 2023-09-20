@@ -1,11 +1,12 @@
-# colored-average Directive
+# colored-average Directive (Angular)
 
 [![npm](https://img.shields.io/npm/v/colored-average)](https://www.npmjs.com/package/colored-average)
 [![License](https://img.shields.io/npm/l/colored-average)](https://github.com/your-username/colored-average/blob/main/LICENSE)
 
 The `colored-average` directive is an Angular directive that allows you to dynamically colorize table cells based on the range of numeric values within the columns. You can specify minimum and maximum colors, and the directive will apply colors smoothly between them based on the values in the table.
 
-![colored-average Demo](demo.png)
+![colored-average Example1](./example1.png)
+![colored-average Example2](./example2.png)
 
 ## Installation
 
