@@ -1,12 +1,26 @@
 {
   "name": "colored-average",
-  "version": "0.8.5",
+  "version": "0.8.6",
   "description": "Angular directive that allows you to dynamically colorize table cells based on the range of numeric values within the columns.",
   "author": {
     "name": "LucasGS",
-    "email": "dev@lucas.gs"},
+    "email": "dev@lucas.gs"
+  },
   "license": "MIT",
   "typings": "./dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Luconico/colored-average"
+  },
+  "keywords": [
+    "angular",
+    "directive",
+    "table",
+    "color",
+    "colorize",
+    "typescript",
+    "javascript"
+  ],
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -14,9 +28,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
-  "dependencies": {
-
-  },
+  "dependencies": {},
   "devDependencies": {
     "@angular-devkit/build-angular": "^16.2.2",
     "@angular/cli": "~16.2.2",
