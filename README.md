@@ -1,27 +1,36 @@
-# ColoredAverage
+# colored-average Directive
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.2.
+[![npm](https://img.shields.io/npm/v/colored-average)](https://www.npmjs.com/package/colored-average)
+[![License](https://img.shields.io/npm/l/colored-average)](https://github.com/your-username/colored-average/blob/main/LICENSE)
 
-## Development server
+The `colored-average` directive is an Angular directive that allows you to dynamically colorize table cells based on the range of numeric values within the columns. You can specify minimum and maximum colors, and the directive will apply colors smoothly between them based on the values in the table.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+![colored-average Demo](demo.png)
 
-## Code scaffolding
+## Installation
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+You can install the `colored-average` directive via npm using the following command:
 
-## Build
+```shell
+npm install colored-average
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Options
 
-## Running unit tests
+The `ColoredAverageOptions` interface allows you to customize the behavior of the directive:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- `minColor`: The color applied to the minimum value in the column. Specify the color using a hexadecimal value (e.g., `#FF0000` for red).
+- `maxColor`: The color applied to the maximum value in the column. Specify the color using a hexadecimal value (e.g., `#00FF00` for green).
+- `applyToBackground`: Set this option to `true` to apply colors to the background of the table cells. Set it to `false` to apply colors to the text color.
 
-## Running end-to-end tests
+You can adjust these options to achieve the desired visual effect for your table columns. For example, you can create a gradient effect from red to green for numeric values in a table.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## License
 
-## Further help
+This project is licensed under the MIT License.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Author
+
+- LucasGS
+- GitHub: [LucasGS](https://github.com/Luconico)
+
+Feel free to contribute or report issues on GitHub!

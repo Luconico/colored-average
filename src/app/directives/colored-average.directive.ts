@@ -96,7 +96,7 @@ export class ColoredAverageDirective implements AfterViewInit {
       const brightness = (r * 299 + g * 587 + b * 114) / 1000;
       return brightness >= 128 ? 'black' : 'white';
     }
-    return 'black'; // Valor predeterminado
+    return 'black'; // default
   }
 
   private interpolateColorChannel(percent: number, minChannel: string, maxChannel: string): number {
