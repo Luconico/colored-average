@@ -1,7 +1,5 @@
-
-
 <div class='container mt-3'>
-    <h2>Simple table</h2>
+    <h2>Example table</h2>
 
     <table class='table'>
         <thead>
@@ -12,11 +10,11 @@
                 <th>column4</th>
             </tr>
         </thead>
-        <tbody [colored-average]="{ minColor: 'red', maxColor: 'green', applyToBackground: true }">
+        <tbody [colored-average]="coloredAverageOptions">
             <tr *ngFor="let row of rows">
                 <td>{{ row.column1 }}</td>
                 <td>{{ row.column2 }}</td>
-                <td>{{ row.column3 }}</td>
+                <td><span>{{ row.column3 }}</span></td>
                 <td>{{ row.column4 }}</td>
             </tr>
         </tbody>
